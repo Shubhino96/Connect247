@@ -25,8 +25,8 @@ public class HomePage extends AppCompatActivity
         setContentView(R.layout.activity_home_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
+        TextView tv=(TextView)findViewById(R.id.general_contact);
+        tv.setSelected(true);  // Set focus to the textview
 
         ViewFlipper vf = (ViewFlipper) findViewById(R.id.flipper);
         vf.startFlipping();
