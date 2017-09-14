@@ -37,12 +37,16 @@
     <!--Flipper Ends Here -->
     <!-- Scrolling Number Starts Here-->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:padding="10dp"
         android:id="@+id/general_contact"
+        android:layout_alignParentRight="true"
         android:text="Call +91-XXXXXXXXXX"
         android:textSize="16dp"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
         android:textAlignment="center"/>
     <!--Scrolling Number Ends Here -->
     <!-- Special Categories Starts-->
