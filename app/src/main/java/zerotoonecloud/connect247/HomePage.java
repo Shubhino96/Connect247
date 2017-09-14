@@ -39,6 +39,26 @@ public class HomePage extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        
+        BottomNavigationView bottomNavigationView = (BottomNavigationView)
+                findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+        new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                        case R.id.action_customer:
+                        
+                        case R.id.action_Home:
+                        
+                        case R.id.action_vendor:
+                        
+                        case R.id.contact:
+                        
+                }
+                return true;
+            }
+        });
     }
 
     @Override
