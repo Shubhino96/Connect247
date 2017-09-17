@@ -5,6 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
     <!--Search Bar-->
+
+
     <!--Search Bar Ends Here-->
     <!--Flipper Goes Here -->
     <ViewFlipper
@@ -35,44 +37,63 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:padding="10sp"
         android:id="@+id/general_contact"
-        android:text="Call +91-XXXXXXXXXX"
-        android:textSize="16dp"
-        android:layout_gravity="center"/>
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true" />
     <!--Scrolling Number Ends Here -->
     <!-- Special Categories Starts-->
+
+
+    <!--Category Buttons End Here-->
+    <!--Lower Buttons-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:stretchColumns="*">
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
+
                     <Button
                         android:id="@+id/button1special"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"/>
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/connect247" />
+
                     <Button
                         android:id="@+id/button2special"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" />
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/deal" />
+
                     <Button
                         android:id="@+id/button3special"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" />
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/extra" />
+
                     <Button
                         android:id="@+id/button4special"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" />
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/blood" />
                 </TableRow>
             </TableLayout>
             <!-- Special Categories Ends here-->
@@ -80,9 +101,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/search_title"
                 android:textAlignment="center"
-                android:text="Categories"
-                android:textSize="20dp" />
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"/>
             <!-- Category Text Ends-->
             <!-- Category Buttons Start-->
             <TableLayout
@@ -90,114 +112,142 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:stretchColumns="*">
+
                 <TableRow
                     android:id="@+id/tableRow1"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent">
+
                     <Button
                         android:id="@+id/button1"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:id="@+id/button2"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:id="@+id/button3"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
                 </TableRow>
+
                 <TableRow
                     android:id="@+id/tableRow2"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1">
+
                     <Button
                         android:id="@+id/button4"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:id="@+id/button5"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:id="@+id/button6"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
                 </TableRow>
+
                 <TableRow
                     android:id="@+id/tableRow3"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1">
+
                     <Button
                         android:id="@+id/button7"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:id="@+id/button8"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:id="@+id/button9"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
                 </TableRow>
+
                 <TableRow
                     android:id="@+id/tableRow4"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1">
+
                     <Button
                         android:id="@+id/button10"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:id="@+id/button12"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
                 </TableRow>
+
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1">
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
                 </TableRow>
+
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1">
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
                 </TableRow>
+
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1">
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
+
                     <Button
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
@@ -206,59 +256,55 @@
         </LinearLayout>
     </ScrollView>
 
-
-    <!--Category Buttons End Here-->
-    <!--Lower Buttons-->
-<!--    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="0dp"
-        android:weightSum="5">
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Home"
-            android:textSize="13sp">
-        </Button>
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Customer"
-            android:textSize="11sp">
-        </Button>
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Vendors"
-            android:textSize="12sp">
-        </Button>
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Contact"
-            android:textSize="12sp">
-        </Button>
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textSize="12sp"
-            android:text="About Us"/>
-
-</LinearLayout>-->
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         app:itemBackground="@color/colorPrimary"
         android:layout_gravity="bottom"
         app:itemIconTint="#000"
         app:itemTextColor="#FFFFFF"
         app:menu="@menu/bottom_navigation_main" />
 </LinearLayout>
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="0dp"
+            android:weightSum="5">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Home"
+                android:textSize="13sp">
+            </Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Customer"
+                android:textSize="11sp">
+            </Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Vendors"
+                android:textSize="12sp">
+            </Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Contact"
+                android:textSize="12sp">
+            </Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:text="About Us"/>
+
+    </LinearLayout>-->
